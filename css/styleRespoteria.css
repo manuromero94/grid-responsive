@@ -3,6 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.contenedor{
+    margin: 1rem;
+   
+    gap: 1rem;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header"
+                         "main main"
+                         "section section"
+                         "footer footer";
+grid-template-rows: auto auto auto auto;
+grid-template-columns:  ;
+}
+
+header{
+    grid-area: header header;
     background-color: blueviolet;
+}
+
+main{
+    grid-area: main main;
+    background-color: aquamarine;
+}
+
+section{
+    grid-area: section section;
+    background-color: blue;
+}
+
+.sectionDos{
+    grid-area: section section;
+    background-color: rgb(43, 43, 61);
+
+}
+
+footer{
+    grid-area: footer footer;
+    background-color: chartreuse;
 }
