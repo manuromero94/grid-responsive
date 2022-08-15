@@ -3,6 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: 
+   "header header"
+   "main main"
+   "section section-dos"
+   "footer footer";
+
+}
+header{
+    grid-area: header;
+    background-color: blue;
+}
+
+main{
+    grid-area: main;
+   background-color: aquamarine;
+}
+section{
+    grid-area: section;
+    background-color: blueviolet;
+}
+.section-dos{
+    grid-area: section-dos;
     background-color: brown;
+}
+footer{
+    grid-area: footer;
+    background-color: burlywood;
 }
